@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Biblioteca Virtual</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="operacoes" class="operacoes">
+            <div class="side">
+                <h1 class="LivroButtonsTitulo" style="align-self: center;">Livro</h1>
+                <button id="addLivroButton">Adicionar</button>
+                <button id="listaLivrosButton">Listar</button>
+                <button id="updateLivroButton">Atualizar</button>
+                <button id="deleteLivroButton">Remover</button>
+            </div>
+            <div class="divider"></div>
+            <div id="primeiraTela" class="primeiraTela">
+                <h1>Biblioteca Virtual</h1>
+                <img class="livroImagem" src="img\abra-o-livro.png" width="50%">
+            </div>
+            <div class="livroOperacoes" id="addLivro">
+                <h1>Cadastrar Livro</h1>
+                <input id="nomeLivro" type="text" placeholder="Digite o título do livro">
+                <input id="generoLivro" type="text" placeholder="Digite o gênero">
+                <input id="autorLivro" type="text" placeholder="Digite o autor">
+                <button id="adicionarLivroEvent">Adicionar</button>
+            </div>
+            <div class="livroOperacoes" id="updateLivro"></div>
+            <div class="livroOperacoes" id="listaLivros"></div>
+            <div class="livroOperacoes" id="deleteLivro"></div>
+            <div class="livroOperacoes" id="atualizando">
+                <h1>Atualizar Livro</h1>
+                <input id="nomeLivroAtualizar" type="text" placeholder="Digite o novo título do livro">
+                <input id="generoLivroAtualizar" type="text" placeholder="Digite o novo gênero">
+                <input id="autorLivroAtualizar" type="text" placeholder="Digite o novo autor">
+                <button id="atualizarLivroEvent">Atualizar</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
